@@ -5,8 +5,588 @@
     <title>HTML Academy: Погнали</title>
   </head>
   <body class="page__body">
+    <div class="catalog-wrapper">
+      <header class="header header--additional">
+        <section class="header__hidden-menu hidden">
+          <div class="header__logo header__logo--dark logo">
+            <img src="https://via.placeholder.com/96x15">
+          </div>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+          <button class="header__menu-button-close button" aria-label="Закрыть основное меню"> <!--hides hidden menu-->
+            <img src="https://via.placeholder.com/18x19">
+          </button>
 
+          <ul class="list header__menu-list header__menu-list--hidden">
+            <li class="header__menu-item">
+              <a href="" class="link header__menu-link header__menu-link--current">о сервисе</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="link header__menu-link link">направления</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="link header__menu-link">попутчики</a>
+            </li>
+          </ul>
+
+          <ul class="list header__actions-list">
+            <li class="header__actions-item">
+              <a href="tel:+78005558628" class="link header__contact-link phone">8 800 555-86-28</a>
+            </li>
+            <li class="header__actions-item">
+              <a href = "mailto: mail@htmlacademy.ru" class="link header__contact-link email">mail@htmlacademy.ru</a>
+            </li>
+            <li class="header__actions-item">
+              <a href = "" class="link header__sing-in-link">авторизация</a>
+            </li>
+          </ul>
+
+          <ul class="list header__media-list">
+            <li class="header__media-item">
+              <a href="" class="link header__media-link facebook">
+                <img src="https://via.placeholder.com/45x45">
+              </a>
+            </li>
+            <li class="header__media-item">
+              <a href="" class="link header__media-link vk">
+                <img src="https://via.placeholder.com/45x45">
+              </a>
+            </li>
+            <li class="header__media-item">
+              <a href="" class="link header__media-link instagram">
+                <img src="https://via.placeholder.com/45x45">
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="header__shown-menu">
+          <div class="header__logo logo">
+            <img src="https://via.placeholder.com/96x15">
+          </div>
+
+          <button class="header__menu-button button" aria-label="Открыть основное меню"> <!--shows country filter-->
+            <img src="https://via.placeholder.com/25x11">
+          </button>
+
+          <h1 class="title1 title1--additional">Попутчики</h1>
+        </section>
+      </header>
+
+      <section class="country-filter">
+        <button class="country-filter__country-selector" aria-label="Открыть список стран"> <!--shows and hides country filter-->
+          <img class="country-filter__icon" src="https://via.placeholder.com/15x10">
+          <span class="country-filter__header">Фильтрация по странам:</span>
+          <img class="country-filter__expand-icon" src="https://via.placeholder.com/17x3">
+          <img class="country-filter__close-icon" src="https://via.placeholder.com/16x16">
+        </button>
+
+        <div class="country-filter__block hidden">
+          <ul class="country-filter__regions list">
+            <li class="country-filter__region">
+              <a href="" class="region-link link">Европа</a>
+            </li>
+            <li class="country-filter__region">
+              <a href="" class="region-link link">Азия</a>
+            </li>
+            <li class="country-filter__region">
+              <a href="" class="region-link link">Америка</a>
+            </li>
+            <li class="country-filter__region">
+              <a href="" class="region-link link">Острова</a>
+            </li>
+          </ul>
+
+          <div class="country-filter__alphabet">
+            <button class="country-filter__letter country-filter__letter--current">А</button>
+            <button class="country-filter__letter">Б</button>
+            <button class="country-filter__letter">В</button>
+            <button class="country-filter__letter">Г</button>
+            <button class="country-filter__letter">Д</button>
+
+            <button class="country-filter__letter">Е</button>
+            <button class="country-filter__letter">З</button>
+            <button class="country-filter__letter">И</button>
+            <button class="country-filter__letter">К</button>
+            <button class="country-filter__letter">Л</button>
+
+            <button class="country-filter__letter">М</button>
+            <button class="country-filter__letter">Н</button>
+            <button class="country-filter__letter">О</button>
+            <button class="country-filter__letter">П</button>
+            <button class="country-filter__letter">Р</button>
+
+            <button class="country-filter__letter">С</button>
+            <button class="country-filter__letter">Т</button>
+            <button class="country-filter__letter">У</button>
+            <button class="country-filter__letter">Ф</button>
+            <button class="country-filter__letter">Х</button>
+
+            <button class="country-filter__letter">Ч</button>
+            <button class="country-filter__letter">Ш</button>
+            <button class="country-filter__letter">Э</button>
+            <button class="country-filter__letter">У</button>
+            <button class="country-filter__letter">Я</button>
+          </div>
+
+          <div class="country-filter__list">
+            <ul class="country-filter__countries_list">
+              <li class="country-filter__list-item">
+                <a href="" class="country-filter__item-link">Австралия</a>
+              </li>
+              <li class="country-filter__list-item">
+                <a href="" class="country-filter__item-link">Австрия</a>
+              </li>
+              <li class="country-filter__list-item">
+                <a href="" class="country-filter__item-link">Азербайджан</a>
+              </li>
+              <li class="country-filter__list-item">
+                <a href="" class="country-filter__item-link">Албания</a>
+              </li>
+              <li class="country-filter__list-item">
+                <a href="" class="country-filter__item-link">Алжир</a>
+              </li>
+              <li class="country-filter__list-item">
+                <a href="" class="country-filter__item-link">Ангола</a>
+              </li>
+              <li class="country-filter__list-item">
+                <a href="" class="country-filter__item-link">Андорра</a>
+              </li>
+              <li class="country-filter__list-item">
+                <a href="" class="country-filter__item-link">Антигуа и Барбуда</a>
+              </li>
+              <li class="country-filter__list-item">
+                <a href="" class="country-filter__item-link">Аргентина</a>
+              </li>
+              <li class="country-filter__list-item">
+                <a href="" class="country-filter__item-link">Армения</a>
+              </li>
+              <li class="country-filter__list-item">
+                <a href="" class="country-filter__item-link">Афганистан</a>
+              </li>
+            </ul>
+          </div>
+
+          <button class="country-filter__close-button" aria-label="Свернуть список стран"> <!--hides country filter-->
+            <img class="country-filter__close-icon--small" src="https://via.placeholder.com/14x14">
+            <span class="country-filter__button-text">Свернуть</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="fellows-filter">
+        <div class="fellows-filter__wrapper">
+          <h3 class="fellows-filter__title">Подберите идеального попутчика</h3>
+
+          <form class="fellows-filter__form" action="https://echo.htmlacademy.ru/" method="GET">
+
+            <!--Hobby-->
+            <div class="fellows-filter__section fellows-filter__hobby">
+              <button class="fellows-filter__button">
+                <span class="fellows-filter__section-name">Хобби</span>
+                <img class="fellows-filter__expand-icon" aria-label="Открыть фильтр хобби" src="https://via.placeholder.com/10x6">
+                <img class="fellows-filter__close-icon hidden" aria-label="Закрыть фильтр хобби" src="https://via.placeholder.com/10x6">
+              </button>
+              <div class="fellows-filter__filter-content visually-hidden">
+                <!--Some filters-->
+              </div>
+            </div>
+
+            <!--Music-->
+            <div class="fellows-filter__section fellows-filter__music">
+              <button class="fellows-filter__button">
+                <span class="fellows-filter__section-name">Музыка</span>
+                <img class="fellows-filter__expand-icon hidden" aria-label="Открыть фильтр музыки" src="https://via.placeholder.com/10x6">
+                <img class="fellows-filter__close-icon" aria-label="Закрыть фильтр музыки" src="https://via.placeholder.com/10x6">
+              </button>
+              <div class="fellows-filter__filter-content">
+                <label class="fellows-filter__input-label" for="hard-rock">
+                  <input class="hotel-checkbox" type="checkbox" name="hard-rock" id="hard-rock" checked>
+                  <img src="https://via.placeholder.com/18x18" alt="checkbox-off" class="fellows-filter__checkbox-off">
+                  <img src="https://via.placeholder.com/18x18" alt="checkbox-on" class="fellows-filter__checkbox-on">
+                  Тяжелый рок
+                </label>
+                <label class="fellows-filter__input-label" for="russian-rap">
+                  <input class="hotel-checkbox" type="checkbox" name="russian-rap" id="russian-rap" checked>
+                  <img src="https://via.placeholder.com/18x18" alt="checkbox-off" class="fellows-filter__checkbox-off">
+                  <img src="https://via.placeholder.com/18x18" alt="checkbox-on" class="fellows-filter__checkbox-on">
+                  Русский рэп
+                </label>
+                <label class="fellows-filter__input-label" for="eurodance">
+                  <input class="hotel-checkbox" type="checkbox" name="eurodance" id="eurodance">
+                  <img src="https://via.placeholder.com/18x18" alt="checkbox-off" class="fellows-filter__checkbox-off">
+                  <img src="https://via.placeholder.com/18x18" alt="checkbox-on" class="fellows-filter__checkbox-on">
+                  Евроденс
+                </label>
+              </div>
+            </div>
+
+            <!--Food-->
+            <div class="fellows-filter__section fellows-filter__food">
+              <button class="fellows-filter__button">
+                <span class="fellows-filter__section-name">Еда</span>
+                <img class="fellows-filter__expand-icon" aria-label="Открыть фильтр еды" src="https://via.placeholder.com/10x6">
+                <img class="fellows-filter__close-icon hidden" aria-label="Закрыть фильтр еды" src="https://via.placeholder.com/10x6">
+              </button>
+              <div class="fellows-filter__filter-content visually-hidden">
+                <!--Some filters-->
+              </div>
+            </div>
+
+            <!--Transport-->
+            <div class="fellows-filter__section fellows-filter__transport">
+              <button class="fellows-filter__button">
+                <span class="fellows-filter__section-name">Транспорт</span>
+                <img class="fellows-filter__expand-icon hidden" aria-label="Открыть фильтр транспорта" src="https://via.placeholder.com/10x6">
+                <img class="fellows-filter__close-icon" aria-label="Закрыть фильтр транспорта" src="https://via.placeholder.com/10x6">
+              </button>
+              <div class="fellows-filter__filter-content">
+                <ul class="fellows-filter__transport-icons">
+                  <li class="fellows-filter__transport-icon">
+                    <img class="fellows-filter__transport-icon-img fellows-filter__transport-icon-img--active" src="https://via.placeholder.com/32x32">
+                  </li>
+                  <li class="fellows-filter__transport-icon">
+                    <img class="fellows-filter__transport-icon-img fellows-filter__transport-icon-img--active" src="https://via.placeholder.com/32x32">
+                  </li>
+                  <li class="fellows-filter__transport-icon">
+                    <img class="fellows-filter__transport-icon-img" src="https://via.placeholder.com/32x32">
+                  </li>
+                  <li class="fellows-filter__transport-icon">
+                    <img class="fellows-filter__transport-icon-img fellows-filter__transport-icon-img--active" src="https://via.placeholder.com/32x32">
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!--Level-->
+            <div class="fellows-filter__section fellows-filter__level">
+              <button class="fellows-filter__button">
+                <span class="fellows-filter__section-name">Левел</span>
+                <img class="fellows-filter__expand-icon hidden" aria-label="Открыть фильтр левела" src="https://via.placeholder.com/10x6">
+                <img class="fellows-filter__close-icon" aria-label="Закрыть фильтр левела" src="https://via.placeholder.com/10x6">
+              </button>
+              <div class="fellows-filter__filter-content">
+                <fieldset class="fellows-filter__fieldset fellows-filter__range-fieldset">
+                  <div class="fellows-filter__range-filter">
+                    <div class="level-controls">
+                        <input class="min-level-input number-input" type="number" name="min-level" value="30" min="0"
+                          max="100" aria-label="Левел от:">
+
+                        <input class="max-level-input number-input" type="number" name="max-level" value="100" min="0"
+                          max="100"  aria-label="Левел до:">
+                    </div>
+
+                    <div class="fellows-filter__range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="toggle-min toggle" tabindex="-1"></div>
+                      <div class="toggle-max toggle" tabindex="-1"></div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+
+            <button class="fellows-filter__submit" type="submit">Показать</button>
+          </form>
+        </div>
+      </section>
+
+      <!--Fellow travaler card 1-->
+      <section class="fellows-card">
+        <div class="fellows-card__wrapper">
+          <div class="fellows-card__photo-wrapper">
+            <img class="fellows-card__photo" aria-label="Фотография Тани Фирсовой" src="https://via.placeholder.com/70x70">
+          </div>
+          <div class="fellows-card__name-wrapper">
+            <h2 class="fellows-card__title">Таня Фирсова</h2>
+            <div class="fellows-card__status">&#8226;</div>
+          </div>
+          <div class="fellows-card__likes-wrapper">
+            <img class="fellows-card__like-icon fellows-card__like-icon--active" src="https://via.placeholder.com/30x30">
+            <span class="fellows-card__like-number">1,5 М</span>
+          </div>
+          <ul class="fellows-card__tags list">
+            <li class="fellows-card__tag">#ЗОЖ</li>
+            <li class="fellows-card__tag">#ПП</li>
+            <li class="fellows-card__tag">#Фитнес</li>
+            <li class="fellows-card__tag">#пляж</li>
+            <li class="fellows-card__tag">#авокадо</li>
+            <li class="fellows-card__tag">#смузи</li>
+          </ul>
+          <div class="fellows-card__wishes">
+            <span class="fellows-card__wishes-title">хочет посетить:</span>
+            <ul class="fellows-card__countries list">
+              <li class="fellows-card__country">
+                <img class="fellows-card__flag" alt="Шри-ланка" src="https://via.placeholder.com/26x18">
+                <span class="fellows-card__country-name">Шри-ланка</span>
+              </li>
+              <li class="fellows-card__country">
+                <img class="fellows-card__flag" alt="Тайланд" src="https://via.placeholder.com/26x18">
+                <span class="fellows-card__country-name">Тайланд</span>
+              </li>
+              <li class="fellows-card__country">
+                <img class="fellows-card__flag" alt="Сейшелы" src="https://via.placeholder.com/26x18">
+                <span class="fellows-card__country-name">Сейшелы</span>
+              </li>
+            </ul>
+          </div>
+          <div class="fellows-card__transport">
+            <span class="fellows-card__transport-title">транспорт:</span>
+            <ul class="fellows-card__transport-icons list">
+              <li class="fellows-card____transport-icon">
+                <img class="ffellows-card__transport-icon-img fellows-card__transport-icon-img--active" src="https://via.placeholder.com/32x32">
+              </li>
+              <li class="fellows-card__transport-icon">
+                <img class="fellows-card__transport-icon-img" src="https://via.placeholder.com/32x32">
+              </li>
+              <li class="fellows-card__transport-icon">
+                <img class="fellows-card__transport-icon-img" src="https://via.placeholder.com/32x32">
+              </li>
+              <li class="fellows-card__transport-icon">
+                <img class="fellows-card__transport-icon-img" src="https://via.placeholder.com/32x32">
+              </li>
+            </ul>
+          </div>
+          <div class="fellows-card__level">
+            <span class="fellows-card__level-number">99</span>
+            <span class="fellows-card__level-text visually-hidden">level</span>
+          </div>
+          <button class="fellows-card__call-button">Позвать</button>
+        </div>
+      </section>
+
+      <!--Fellow travaler card 2-->
+      <section class="fellows-card">
+        <div class="fellows-card__wrapper">
+          <div class="fellows-card__photo-wrapper">
+            <img class="fellows-card__photo" aria-label="Фотография Пети Демина" src="https://via.placeholder.com/70x70">
+          </div>
+          <div class="fellows-card__name-wrapper">
+            <h2 class="fellows-card__title">Петя Демин</h2>
+            <div class="fellows-card__status">&#8226;</div>
+          </div>
+          <div class="fellows-card__likes-wrapper">
+            <img class="fellows-card__like-icon" src="https://via.placeholder.com/30x30">
+            <span class="fellows-card__like-number">1500</span>
+          </div>
+
+          <ul class="fellows-card__tags list">
+            <li class="fellows-card__tag">#бургер</li>
+            <li class="fellows-card__tag">#бар</li>
+            <li class="fellows-card__tag">#футбол</li>
+            <li class="fellows-card__tag">#концерт</li>
+            <li class="fellows-card__tag">#крафт</li>
+          </ul>
+          <div class="fellows-card__wishes">
+            <span class="fellows-card__wishes-title">хочет посетить:</span>
+            <ul class="fellows-card__countries list">
+              <li class="fellows-card__country">
+                <img class="fellows-card__flag" alt="Бельгия" src="https://via.placeholder.com/26x18">
+                <span class="fellows-card__country-name">Бельгия</span>
+              </li>
+              <li class="fellows-card__country">
+                <img class="fellows-card__flag" alt="Чехия" src="https://via.placeholder.com/26x18">
+                <span class="fellows-card__country-name">Чехия</span>
+              </li>
+            </ul>
+          </div>
+          <div class="fellows-card__transport">
+            <span class="fellows-card__transport-title">транспорт:</span>
+            <ul class="fellows-card__transport-icons list">
+              <li class="fellows-card____transport-icon">
+                <img class="ffellows-card__transport-icon-img fellows-card__transport-icon-img--active" src="https://via.placeholder.com/32x32">
+              </li>
+              <li class="fellows-card__transport-icon">
+                <img class="fellows-card__transport-icon-img fellows-card__transport-icon-img--active" src="https://via.placeholder.com/32x32">
+              </li>
+              <li class="fellows-card__transport-icon">
+                <img class="fellows-card__transport-icon-img" src="https://via.placeholder.com/32x32">
+              </li>
+              <li class="fellows-card__transport-icon">
+                <img class="fellows-card__transport-icon-img fellows-card__transport-icon-img--active" src="https://via.placeholder.com/32x32">
+              </li>
+            </ul>
+          </div>
+          <div class="fellows-card__level">
+            <span class="fellows-card__level-number">80</span>
+            <span class="fellows-card__level-text visually-hidden">level</span>
+          </div>
+          <button class="fellows-card__call-button">Позвать</button>
+        </div>
+      </section>
+
+      <!--Fellow travaler card 3-->
+      <section class="fellows-card">
+        <div class="fellows-card__wrapper">
+          <div class="fellows-card__photo-wrapper">
+            <img class="fellows-card__photo" aria-label="Фотография Марка Смолова" src="https://via.placeholder.com/70x70">
+          </div>
+          <div class="fellows-card__name-wrapper">
+            <h2 class="fellows-card__title">Марк Смолов</h2>
+            <div class="fellows-card__status">&#8226;</div>
+          </div>
+          <div class="fellows-card__likes-wrapper">
+            <img class="fellows-card__like-icon" src="https://via.placeholder.com/30x30">
+            <span class="fellows-card__like-number">170</span>
+          </div>
+          <ul class="fellows-card__tags list">
+            <li class="fellows-card__tag">#рэп</li>
+            <li class="fellows-card__tag">#тату</li>
+            <li class="fellows-card__tag">#хайпбист</li>
+            <li class="fellows-card__tag">#кроссовки</li>
+            <li class="fellows-card__tag">#суприм</li>
+          </ul>
+          <div class="fellows-card__wishes">
+            <span class="fellows-card__wishes-title">хочет посетить:</span>
+            <ul class="fellows-card__countries list">
+              <li class="fellows-card__country">
+                <img class="fellows-card__flag" alt="США" src="https://via.placeholder.com/26x18">
+                <span class="fellows-card__country-name">США</span>
+              </li>
+              <li class="fellows-card__country">
+                <img class="fellows-card__flag" alt="Австралия" src="https://via.placeholder.com/26x18">
+                <span class="fellows-card__country-name">Австралия</span>
+              </li>
+              <li class="fellows-card__country">
+                <img class="fellows-card__flag" alt="Доминикана" src="https://via.placeholder.com/26x18">
+                <span class="fellows-card__country-name">Доминикана</span>
+              </li>
+            </ul>
+          </div>
+          <div class="fellows-card__transport">
+            <span class="fellows-card__transport-title">транспорт:</span>
+            <ul class="fellows-card__transport-icons list">
+              <li class="fellows-card____transport-icon">
+                <img class="ffellows-card__transport-icon-img fellows-card__transport-icon-img--active" src="https://via.placeholder.com/32x32">
+              </li>
+              <li class="fellows-card__transport-icon">
+                <img class="fellows-card__transport-icon-img" src="https://via.placeholder.com/32x32">
+              </li>
+              <li class="fellows-card__transport-icon">
+                <img class="fellows-card__transport-icon-img fellows-card__transport-icon-img--active" src="https://via.placeholder.com/32x32">
+              </li>
+              <li class="fellows-card__transport-icon">
+                <img class="fellows-card__transport-icon-img" src="https://via.placeholder.com/32x32">
+              </li>
+            </ul>
+          </div>
+          <div class="fellows-card__level">
+            <span class="fellows-card__level-number">25</span>
+            <span class="fellows-card__level-text visually-hidden">level</span>
+          </div>
+          <button class="fellows-card__call-button">Позвать</button>
+        </div>
+      </section>
+
+      <!--Fellow travaler card 4-->
+      <section class="fellows-card">
+        <div class="fellows-card__wrapper">
+          <div class="fellows-card__photo-wrapper">
+            <img class="fellows-card__photo" aria-label="Фотография Ларисы Роговой" src="https://via.placeholder.com/70x70">
+          </div>
+          <div class="fellows-card__name-wrapper">
+            <h2 class="fellows-card__title">Лариса Роговая</h2>
+            <div class="fellows-card__status fellows-card__status--active">&#8226;</div>
+          </div>
+          <div class="fellows-card__likes-wrapper">
+            <img class="fellows-card__like-icon" src="https://via.placeholder.com/30x30">
+            <span class="fellows-card__like-number">23</span>
+          </div>
+          <ul class="fellows-card__tags list">
+            <li class="fellows-card__tag">#образование</li>
+            <li class="fellows-card__tag">#карьера</li>
+            <li class="fellows-card__tag">#учеба</li>
+            <li class="fellows-card__tag">#линкедин</li>
+          </ul>
+          <div class="fellows-card__wishes">
+            <span class="fellows-card__wishes-title">хочет посетить:</span>
+            <ul class="fellows-card__countries list">
+              <li class="fellows-card__country">
+                <img class="fellows-card__flag" alt="Великобритания" src="https://via.placeholder.com/26x18">
+                <span class="fellows-card__country-name">Великобритания</span>
+              </li>
+              <li class="fellows-card__country">
+                <img class="fellows-card__flag" alt="Германия" src="https://via.placeholder.com/26x18">
+                <span class="fellows-card__country-name">Германия</span>
+              </li>
+            </ul>
+          </div>
+          <div class="fellows-card__transport">
+            <span class="fellows-card__transport-title">транспорт:</span>
+            <ul class="fellows-card__transport-icons list">
+              <li class="fellows-card____transport-icon">
+                <img class="ffellows-card__transport-icon-img fellows-card__transport-icon-img--active" src="https://via.placeholder.com/32x32">
+              </li>
+              <li class="fellows-card__transport-icon">
+                <img class="fellows-card__transport-icon-img fellows-card__transport-icon-img--active" src="https://via.placeholder.com/32x32">
+              </li>
+              <li class="fellows-card__transport-icon">
+                <img class="fellows-card__transport-icon-img" src="https://via.placeholder.com/32x32">
+              </li>
+              <li class="fellows-card__transport-icon">
+                <img class="fellows-card__transport-icon-img" src="https://via.placeholder.com/32x32">
+              </li>
+            </ul>
+          </div>
+          <div class="fellows-card__level">
+            <span class="fellows-card__level-number">50</span>
+            <span class="fellows-card__level-text visually-hidden">level</span>
+          </div>
+          <button class="fellows-card__call-button">Позвать</button>
+        </div>
+      </section>
+
+      <!--Show more button-->
+      <button class="show-more-button" aria-label="Показать еще">
+        <img class="show-more-button__img" src="https://via.placeholder.com/18x18">
+        <span class="show-more-button__text">Показать еще</span>
+      </button>
+
+      <!--Page pagination-->
+      <div class="catalog-pagination">
+        <a class="catalog-pagination__arrow catalog-pagination__arrow--back" href="">
+          <img  src="https://via.placeholder.com/20x13" alt="back" class="catalog-pagination__arrow-img catalog-pagination__arrow-img--back">
+        </a>
+        <div class="catalog-pagination__numbers visually-hidden">
+          <a class="catalog-pagination__number catalog-pagination__number--current" href="">1</a>
+          <a class="catalog-pagination__number" href="">2</a>
+          <a class="catalog-pagination__number" href="">3</a>
+          <a class="catalog-pagination__number" href="">4</a>
+        </div>
+        <a class="catalog-pagination__arrow catalog-pagination__arrow--forward" href="">
+          <img  src="https://via.placeholder.com/20x13" alt="forward" class="catalog-pagination__arrow-img catalog-pagination__arrow-img--forward">
+        </a>
+      </div>
+
+      <footer class="footer footer--main">
+        <div class="footer__logo logo">
+          <img src="https://via.placeholder.com/96x15">
+        </div>
+        <ul class="list footer__media-list">
+          <li class="footer__media-item">
+            <a href="" class="link footer__media-link facebook">
+              <img src="https://via.placeholder.com/45x45">
+            </a>
+          </li>
+          <li class="footer__media-item">
+            <a href="" class="link footer__media-link vk">
+              <img src="https://via.placeholder.com/45x45">
+            </a>
+          </li>
+          <li class="footer__media-item">
+            <a href="" class="link footer__media-link instagram">
+              <img src="https://via.placeholder.com/45x45">
+            </a>
+          </li>
+        </ul>
+        <div class="footer__developer">
+          <span class="footer__developer-text">Разработано</span>
+          <a class="link footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="https://via.placeholder.com/27x33">
+          </a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
